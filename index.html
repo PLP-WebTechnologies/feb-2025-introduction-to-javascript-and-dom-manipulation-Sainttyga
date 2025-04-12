@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PLP Academy - Software Development Training for African Youth">
+    <link rel="stylesheet" href="style.css">
+    <title>PLP Academy</title>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-nav">
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Area Start ***** -->
+    <main>
+        <section class="hero">
+            <h1>Power Learn Project</h1>
+            <h2>Software Development - February 2025 - Cohort VII</h2>
+            <p>This course is meant to train young people from Africa, starting at a point of little experience to fairly skilled software developers.</p>
+
+            <button id="changeTextButton">Change Text Content</button>
+            <p id="dynamicText">This is a static text that will be changed.</p>
+        </section>
+
+        <section class="modules">
+            <h2>Enrolled Modules</h2>
+            <p>Below is a list of modules:</p>
+            <ol type="i">
+                <li><strong>Software Engineering Essentials</strong> - Learn the fundamentals of software engineering.</li>
+                <li><strong>Web Development V2</strong> - Dive into modern web development techniques.</li>
+                <li><strong>Python Programming</strong> - Master the Python programming language.</li>
+                <li><strong>Database Design & Programming with SQL</strong> - Understand database concepts and SQL.</li>
+                <li><strong>Startup Building for Developers</strong> - Gain insights into building and managing startups.</li>
+            </ol>
+        </section>
+
+        <section class="graduates">
+            <h2>Our 2024 Graduates</h2>
+            <img src="photo/pexels-emily-ranquist-493228-1205651.jpg" alt="Group of graduates celebrating" width="600" loading="lazy">
+        </section>
+
+        <section class="contacts">
+            <h2>Contact List</h2>
+            <div class="table-responsive">
+                <table id="contactTable">
+                <thead>
+                    <tr>
+                        <th>NAME & SURNAME</th>
+                        <th>ADDRESS</th>
+                        <th>MOBILE</th>
+                        <th>EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>J Cole</td>
+                        <td>New York, USA</td>
+                        <td>+27 65 432 9909</td>
+                        <td>jcole@outlook.com</td>
+                    </tr>
+                    <!-- Other existing rows -->
+                </tbody>
+            </table>
+            </div>
+            <div class="table-controls">
+                <button id="addContactButton" aria-label="Add new contact">Add Contact</button>
+                <button id="removeContactButton" aria-label="Remove last contact">Remove Last Contact</button>
+            </div>
+        </section>
+
+        <section class="registration">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter a secure password" required minlength="8">
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </fieldset>
+                <button type="submit" aria-label="Submit registration form">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer>
+        <p>August 2024 - Cohort VI Support Channel</p>
+        <p>&copy; 2024 Power Learn Project. All rights reserved.</p>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
